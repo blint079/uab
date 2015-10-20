@@ -1,0 +1,18 @@
+oauth \
+  --verbose \
+   --query-string \
+    --consumer-key f56a5368cdb0ec09a7d17c288fce5a9d \
+    --consumer-secret 11fba21c3a8641fe6fbf0e36f58afad1 \ 
+   --access-token-url http://www.underabuck.com/oauth/token \
+   --authorize-url http://www.underabuck.com/oauth/authorize \
+   --request-token-url http://www.underabuck.com/oauth/initiate \
+   authorize
+
+
+oauth \
+    --consumer-key f56a5368cdb0ec09a7d17c288fce5a9d \
+    --consumer-secret 11fba21c3a8641fe6fbf0e36f58afad1 \ 
+    --token aqvlfv9tuexn0mqiydgkaff4ixxg8743c \
+    --secret g9kyz8c7zv868d58eav1muih3gxvq763 \ 
+    --uri http://www.yourstore.com/magento/api/rest/products \
+    debug
