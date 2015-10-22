@@ -9,7 +9,7 @@ class ServiceBase
 	attr_accessor :db, :doc, :config
 
 	def initialize(db_name,config = nil)
-		@db = CouchRest.database!("http://localhost:5980/#{db_name}")
+		@db = CouchRest.database!("http://54.186.175.170:5984/#{db_name}")
 		RAISE "NO DB SELECTED .. UNCOMMENT ONE" unless @db
 	end
 	
