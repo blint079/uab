@@ -12,9 +12,7 @@ product_db = ServiceBase.new('products')
 # xml_o.each { |p| pts[p['product_id']] = { :sku => p['sku'], :category => p['category_ids']}}
 xml_o.each do |p|
 	p = m.call('catalog_product.info',p['product_id'])
+	pa = m.call('product_custom_option.list',p['product_id'])
+	p['custom_option'] = pa
 	product_db.save(p)
 end
-
-
-
-
