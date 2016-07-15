@@ -35,7 +35,3 @@ pids.each do |pid|
 	
 	product_db.save(p)
 end
-
-
-
-
